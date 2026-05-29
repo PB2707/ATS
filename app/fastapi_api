@@ -1,0 +1,16 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.post("/upload")
+def upload_resume():
+    ...
+
+@app.post("/match")
+def match_candidates():
+    ...
+
+@app.post("/chat")
+def recruiter_chat():
+    ...
+    

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pymupdf
+sentence-transformers
+qdrant-client
+psycopg2-binary
+ollama
+python-multipart
+streamlit

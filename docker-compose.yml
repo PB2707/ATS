@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ats
+      POSTGRES_USER: ats
+      POSTGRES_PASSWORD: ats
+    ports:
+      - "5432:5432"
+
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
